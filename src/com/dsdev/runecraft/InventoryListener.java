@@ -1,8 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.dsdev.runecraft;
+﻿package com.dsdev.runecraft;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,8 +19,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 /**
+ * This does inventory related stuff for the custom crafting table.
  *
- * @author Greenlock
+ * @author Greenlock28
  */
 public class InventoryListener implements Listener
 {
