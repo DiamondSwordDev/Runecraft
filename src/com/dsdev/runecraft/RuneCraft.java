@@ -4,7 +4,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import com.dsdev.runecraft.EventListener;
 
 public class RuneCraft extends JavaPlugin
 {
@@ -13,6 +12,7 @@ public class RuneCraft extends JavaPlugin
 	{
 		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
 		getServer().getPluginManager().registerEvents(new DropListener(), this);
+		getServer().getPluginManager().registerEvents(new PlayerListener(), this);
 		
 		getLogger().info("RuneCraft has been enabled!");
 	}
