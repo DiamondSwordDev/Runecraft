@@ -1,9 +1,8 @@
-﻿package com.dsdev.runecraft;
+package com.dsdev.runecraft;
 
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.entity.LivingEntity;
 
 /**
  * This is the interpreter the runs the rune scripts.
