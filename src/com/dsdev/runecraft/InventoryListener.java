@@ -1,4 +1,4 @@
-﻿package com.dsdev.runecraft;
+package com.dsdev.runecraft;
 
 import java.util.ArrayList;
 import java.util.List;
