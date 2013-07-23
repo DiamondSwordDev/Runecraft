@@ -5,14 +5,13 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.Greenlock28.RuneCraft.EventListener;
-
 public class RuneCraft extends JavaPlugin
 {
 	@Override
 	public void onEnable()
 	{
-		getServer().getPluginManager().registerEvents(new EventListener(this.getConfig(), this.getServer()), this);
+		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
+		getServer().getPluginManager().registerEvents(new DropListener(), this);
 		
 		getLogger().info("RuneCraft has been enabled!");
 	}
