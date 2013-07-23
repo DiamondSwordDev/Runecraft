@@ -1,9 +1,3 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
 /Runecraft/nbproject/private/
 /nbproject/private/
 /dist/
