@@ -33,12 +33,12 @@ public class RuneInterpreter
 	public String[] GetScriptRunes()
 	{
 		String script = "";
-		for (int i = 0; i < runescript.length(); i++)
+		for (int i = 0; i < RuneScript.length(); i++)
 		{
-			if (runescript.toCharArray()[i] == '§')
+			if (RuneScript.toCharArray()[i] == 'ï¿½')
 				i++;
 			else
-				script += runescript.toCharArray()[i];
+				script += RuneScript.toCharArray()[i];
 		}
 		
 		boolean openbracket = false;

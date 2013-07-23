@@ -5,3 +5,5 @@
 *.war
 *.ear
 /Runecraft/nbproject/private/
+/nbproject/private/
+/dist/

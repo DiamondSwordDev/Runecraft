@@ -21,7 +21,7 @@ public class RuneCraft extends JavaPlugin
 		getLogger().info("RuneCraft has been disabled!");
 	}
 	
-	
+        
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
 	{
 		if (cmd.getName().equalsIgnoreCase("giverune") && sender instanceof Player && sender.hasPermission("runecraft.giverune"))
