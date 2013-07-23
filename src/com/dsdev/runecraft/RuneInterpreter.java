@@ -3,13 +3,20 @@ package com.dsdev.runecraft;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.entity.LivingEntity;
 
 public class RuneInterpreter
 {
 	public String RuneScript = "";
+	
+	public String EventType = "";
+	
 	public Player invokingPlayer = null;
 	public Block invokingBlock = null;
 	public ItemStack invokingItem = null;
+	public Player targetPlayer = null;
+	public Block targetBlock = null;
+	public LivingEntity targetMob = null;
 	
 	
 	public RuneInterpreter()

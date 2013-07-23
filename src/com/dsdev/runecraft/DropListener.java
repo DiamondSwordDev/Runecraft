@@ -14,7 +14,7 @@ import org.bukkit.event.entity.EntityDeathEvent;
 
 /**
  *
- * @author LukeSmalley
+ * @author Greenlock
  */
 public class DropListener implements Listener
 {

@@ -24,12 +24,11 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 /**
  *
- * @author LukeSmalley
+ * @author Greenlock
  */
 public class InventoryListener implements Listener
 {
 	public List<String> playersopen = new ArrayList();
-	
 	
 	
 	@EventHandler(priority=EventPriority.NORMAL)
@@ -43,12 +42,15 @@ public class InventoryListener implements Listener
 			if (event.getClickedBlock().getTypeId() == 147 & w.getBlockTypeIdAt(new Location(w, p.getTargetBlock(null, 10).getX(), p.getTargetBlock(null, 10).getY() - 1, p.getTargetBlock(null, 10).getZ())) == 113)
 			{
 				playersopen.add(event.getPlayer().getName());
+				
 				Inventory runetable = event.getPlayer().getServer().createInventory(null, 18, "Rune Table");
+				
 				ItemStack button = new ItemStack(Material.EMERALD);
 				ItemMeta buttonmeta = button.getItemMeta();
 				buttonmeta.setDisplayName("§a(Combine)");
 				button.setItemMeta(buttonmeta);
 				runetable.setItem(9, button);
+				
 				event.getPlayer().openInventory(runetable);
 			}
 		}
@@ -75,7 +77,6 @@ public class InventoryListener implements Listener
 					if (i.getTypeId() != 388)
 						event.getPlayer().getWorld().dropItemNaturally(event.getPlayer().getTargetBlock(null, 10).getLocation(), i);
 				}
-				//event.getPlayer().getInventory().addItem(i);
 			}
 		}
 	}

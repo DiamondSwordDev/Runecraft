@@ -11,7 +11,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 
 /**
  *
- * @author LukeSmalley
+ * @author Greenlock
  */
 public class PlayerListener implements Listener
 {
