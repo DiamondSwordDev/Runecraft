@@ -3,7 +3,6 @@ package com.Greenlock28.RuneCraft;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -25,8 +24,6 @@ public class Rune
 	
 	public ItemStack GetRuneItem()
 	{
-		int symboltype = 0;
-		
 		if (Symbol.equals("[=]") | Symbol.equals("[<]") | Symbol.equals("[>]") | Symbol.equals("[?]") | Symbol.equals("[#]") | Symbol.equals("[0]") | Symbol.equals("[1]") | Symbol.equals("[2]") | Symbol.equals("[3]") | Symbol.equals("[4]") | Symbol.equals("[5]") | Symbol.equals("[6]") | Symbol.equals("[7]") | Symbol.equals("[8]") | Symbol.equals("[9]"))
 		{
 			return GetRuneTypeStructure();
@@ -57,15 +54,15 @@ public class Rune
 	private ItemStack GetRuneTypeStructure()
 	{
 		ItemStack runedrop = GetRuneNull();
-		List<String> runelore = new ArrayList<String>();
+		List<String> runelore = new ArrayList();
 		
 		if (Symbol.equals("[=]"))
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fRune of Equality");
-			runelore.add("§2[§a=§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fRune of Equality");
+			runelore.add("Â§2[Â§a=Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -73,9 +70,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fLesser Rune");
-			runelore.add("§2[§a<§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fLesser Rune");
+			runelore.add("Â§2[Â§a<Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -83,9 +80,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fGreater Rune");
-			runelore.add("§2[§a>§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fGreater Rune");
+			runelore.add("Â§2[Â§a>Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -93,9 +90,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fConditional Rune");
-			runelore.add("§2[§a?§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fConditional Rune");
+			runelore.add("Â§2[Â§a?Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -103,9 +100,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fRune of Travel");
-			runelore.add("§2[§a#§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fRune of Travel");
+			runelore.add("Â§2[Â§a#Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -113,9 +110,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fFirst Rune");
-			runelore.add("§2[§a1§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fFirst Rune");
+			runelore.add("Â§2[Â§a1Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -123,9 +120,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fSecond Rune");
-			runelore.add("§2[§a2§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fSecond Rune");
+			runelore.add("Â§2[Â§a2Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -133,9 +130,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fThird Rune");
-			runelore.add("§2[§a3§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fThird Rune");
+			runelore.add("Â§2[Â§a3Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -143,9 +140,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fFourth Rune");
-			runelore.add("§2[§a4§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fFourth Rune");
+			runelore.add("Â§2[Â§a4Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -153,9 +150,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fFifth Rune");
-			runelore.add("§2[§a5§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fFifth Rune");
+			runelore.add("Â§2[Â§a5Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -163,9 +160,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fSixth Rune");
-			runelore.add("§2[§a6§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fSixth Rune");
+			runelore.add("Â§2[Â§a6Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -173,9 +170,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fSeventh Rune");
-			runelore.add("§2[§a7§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fSeventh Rune");
+			runelore.add("Â§2[Â§a7Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -183,9 +180,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fEighth Rune");
-			runelore.add("§2[§a8§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fEighth Rune");
+			runelore.add("Â§2[Â§a8Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -193,9 +190,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fNinth Rune");
-			runelore.add("§2[§a9§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fNinth Rune");
+			runelore.add("Â§2[Â§a9Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -203,9 +200,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)10);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fZero Rune");
-			runelore.add("§2[§a0§2]");
-			runelore.add("§8Structure Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fZero Rune");
+			runelore.add("Â§2[Â§a0Â§2]");
+			runelore.add("Â§8Structure Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -221,10 +218,10 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)14);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fMove Function Rune");
-			List<String> runelore = new ArrayList<String>();
-			runelore.add("§5[§dMv§5]");
-			runelore.add("§8Function Type Rune (Double Glyph)");
+			runemeta.setDisplayName("Â§fMove Function Rune");
+			List<String> runelore = new ArrayList();
+			runelore.add("Â§5[Â§dMvÂ§5]");
+			runelore.add("Â§8Function Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -232,10 +229,10 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)14);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fDestroy Function Rune");
-			List<String> runelore = new ArrayList<String>();
-			runelore.add("§5[§dDs§5]");
-			runelore.add("§8Function Type Rune (Double Glyph)");
+			runemeta.setDisplayName("Â§fDestroy Function Rune");
+			List<String> runelore = new ArrayList();
+			runelore.add("Â§5[Â§dDsÂ§5]");
+			runelore.add("Â§8Function Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -246,15 +243,15 @@ public class Rune
 	private ItemStack GetRuneTypeEvent()
 	{
 		ItemStack runedrop = GetRuneNull();
-		List<String> runelore = new ArrayList<String>();
+		List<String> runelore = new ArrayList();
 		
 		if (Symbol.equals("[P]"))
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fRune of the Player");
-			runelore.add("§3[§bP§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fRune of the Player");
+			runelore.add("Â§3[Â§bPÂ§3]");
+			runelore.add("Â§8Event Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -262,9 +259,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fRune of the Block");
-			runelore.add("§3[§bB§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fRune of the Block");
+			runelore.add("Â§3[Â§bBÂ§3]");
+			runelore.add("Â§8Event Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -272,9 +269,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fRune of the Item");
-			runelore.add("§3[§bI§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fRune of the Item");
+			runelore.add("Â§3[Â§bIÂ§3]");
+			runelore.add("Â§8Event Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -282,9 +279,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fPlayer Rune");
-			runelore.add("§3[§bp§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fPlayer Rune");
+			runelore.add("Â§3[Â§bpÂ§3]");
+			runelore.add("Â§8Event Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -292,9 +289,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fBlock Rune");
-			runelore.add("§3[§bb§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fBlock Rune");
+			runelore.add("Â§3[Â§bbÂ§3]");
+			runelore.add("Â§8Event Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -302,9 +299,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fItem Rune");
-			runelore.add("§3[§bi§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fItem Rune");
+			runelore.add("Â§3[Â§biÂ§3]");
+			runelore.add("Â§8Event Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -312,9 +309,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fMob Rune");
-			runelore.add("§3[§bm§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fMob Rune");
+			runelore.add("Â§3[Â§bmÂ§3]");
+			runelore.add("Â§8Event Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -322,9 +319,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fEventful Rune");
-			runelore.add("§3[§bE§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
+			runemeta.setDisplayName("Â§fEventful Rune");
+			runelore.add("Â§3[Â§bEÂ§3]");
+			runelore.add("Â§8Event Type Rune (Single Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -335,15 +332,15 @@ public class Rune
 	private ItemStack GetRuneTypeConstant()
 	{
 		ItemStack runedrop = GetRuneNull();
-		List<String> runelore = new ArrayList<String>();
+		List<String> runelore = new ArrayList();
 		
 		if (Symbol.equals("[en]"))
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fEvent Left-Click Null Rune");
-			runelore.add("§8[§7en§8]");
-			runelore.add("§8Constant Type Rune (Double Glyph)");
+			runemeta.setDisplayName("Â§fEvent Left-Click Null Rune");
+			runelore.add("Â§8[Â§7enÂ§8]");
+			runelore.add("Â§8Constant Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -351,9 +348,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fEvent Right-Click Null Rune");
-			runelore.add("§8[§7eN§8]");
-			runelore.add("§8Constant Type Rune (Double Glyph)");
+			runemeta.setDisplayName("Â§fEvent Right-Click Null Rune");
+			runelore.add("Â§8[Â§7eNÂ§8]");
+			runelore.add("Â§8Constant Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -361,9 +358,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fEvent Left-Click Player Rune");
-			runelore.add("§8[§7ep§8]");
-			runelore.add("§8Constant Type Rune (Double Glyph)");
+			runemeta.setDisplayName("Â§fEvent Left-Click Player Rune");
+			runelore.add("Â§8[Â§7epÂ§8]");
+			runelore.add("Â§8Constant Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -371,9 +368,9 @@ public class Rune
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
 			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fEvent Right-Click Player Rune");
-			runelore.add("§8[§7eP§8]");
-			runelore.add("§8Constant Type Rune (Double Glyph)");
+			runemeta.setDisplayName("Â§fEvent Right-Click Player Rune");
+			runelore.add("Â§8[Â§7ePÂ§8]");
+			runelore.add("Â§8Constant Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
@@ -386,10 +383,10 @@ public class Rune
 	{
 		ItemStack runedrop = new ItemStack(263, 1, (short)1);
 		ItemMeta runemeta = runedrop.getItemMeta();
-		runemeta.setDisplayName("§fError Null Rune");
-		List<String> runelore = new ArrayList<String>();
-		runelore.add("§4[§cNUL§4]");
-		runelore.add("§8Of Doom Type Rune (Triple Glyph)");
+		runemeta.setDisplayName("Â§fError Null Rune");
+		List<String> runelore = new ArrayList();
+		runelore.add("Â§4[Â§cNULÂ§4]");
+		runelore.add("Â§8Of Doom Type Rune (Triple Glyph)");
 		runemeta.setLore(runelore);
 		runedrop.setItemMeta(runemeta);
 		return runedrop;
