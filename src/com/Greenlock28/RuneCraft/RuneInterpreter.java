@@ -41,7 +41,6 @@ public class RuneInterpreter
 				script += RuneScript.toCharArray()[i];
 		}
 		
-		boolean openbracket = false;
 		int runecount = 0;
 		for (int i = 0; i < script.length(); i++)
 		{

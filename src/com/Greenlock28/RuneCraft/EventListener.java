@@ -30,7 +30,7 @@ public class EventListener implements Listener
 	public FileConfiguration config = null;
 	public Server serv = null;
 	
-	public List<String> playersopen = new ArrayList<String>();
+	public List<String> playersopen = new ArrayList();
 	
 	private Random rand = new Random();
 	private String[] droplisttruth = { "[=]", "[<]", "[>]" };
@@ -148,14 +148,14 @@ public class EventListener implements Listener
 				ItemStack page = new ItemStack(339, 1);
 				ItemMeta pagemeta = page.getItemMeta();
 				pagemeta.setDisplayName("§fRune Scroll");
-				List<String> pagelore = new ArrayList<String>();
+				List<String> pagelore = new ArrayList();
 				String pagecontents = "";
 				for (int i = 0; i < 9; i++)
 				{
 					if (event.getInventory().getContents()[i] != null)
 						pagecontents = pagecontents + event.getInventory().getContents()[i].getItemMeta().getLore().toArray()[0];
 				}
-				if (pagecontents != "")
+				if (!pagecontents.equals(""))
 				{
 					pagelore.add(pagecontents);
 					pagemeta.setLore(pagelore);
@@ -167,14 +167,14 @@ public class EventListener implements Listener
 			{
 				ItemStack page = event.getInventory().getContents()[10];
 				ItemMeta pagemeta = page.getItemMeta();
-				List<String> pagelore = new ArrayList<String>();
+				List<String> pagelore = new ArrayList();
 				String pagecontents = "";
 				for (int i = 0; i < 9; i++)
 				{
 					if (event.getInventory().getContents()[i] != null)
 						pagecontents = pagecontents + event.getInventory().getContents()[i].getItemMeta().getLore().toArray()[0];
 				}
-				if (pagecontents != "")
+				if (!pagecontents.equals(""))
 				{
 					pagelore.add(pagecontents);
 					pagemeta.setLore(pagelore);
