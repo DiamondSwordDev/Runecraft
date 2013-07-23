@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.Greenlock28.RuneCraft;
+package com.dsdev.runecraft;
 
 import java.util.Random;
 import org.bukkit.entity.EntityType;
@@ -14,7 +14,7 @@ import org.bukkit.event.entity.EntityDeathEvent;
 
 /**
  *
- * @author LukeSmalley
+ * @author Greenlock
  */
 public class DropListener implements Listener
 {

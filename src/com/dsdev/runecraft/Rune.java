@@ -30,7 +30,7 @@ public class Rune
 		}
 		else if (Symbol.equals("[P]") | Symbol.equals("[B]") | Symbol.equals("[I]") | Symbol.equals("[p]") | Symbol.equals("[b]") | Symbol.equals("[i]") | Symbol.equals("[m]") | Symbol.equals("[E]"))
 		{
-			return GetRuneTypeEvent();
+			return GetRuneTypeParameter();
 		}
 		else if (Symbol.equals("[Mv]") | Symbol.equals("[Ds]"))
 		{
@@ -51,6 +51,7 @@ public class Rune
 	}
 	
 	
+	//Lime Green
 	private ItemStack GetRuneTypeStructure()
 	{
 		ItemStack runedrop = GetRuneNull();
@@ -210,13 +211,14 @@ public class Rune
 		return runedrop;
 	}
 	
+	//Magenta
 	private ItemStack GetRuneTypeFunction()
 	{
 		ItemStack runedrop = GetRuneNull();
 		
 		if (Symbol.equals("[Mv]"))
 		{
-			runedrop = new ItemStack(351, 1, (short)14);
+			runedrop = new ItemStack(351, 1, (short)13);
 			ItemMeta runemeta = runedrop.getItemMeta();
 			runemeta.setDisplayName("§fMove Function Rune");
 			List<String> runelore = new ArrayList();
@@ -227,7 +229,7 @@ public class Rune
 		}
 		if (Symbol.equals("[Ds]"))
 		{
-			runedrop = new ItemStack(351, 1, (short)14);
+			runedrop = new ItemStack(351, 1, (short)13);
 			ItemMeta runemeta = runedrop.getItemMeta();
 			runemeta.setDisplayName("§fDestroy Function Rune");
 			List<String> runelore = new ArrayList();
@@ -240,7 +242,8 @@ public class Rune
 		return runedrop;
 	}
 	
-	private ItemStack GetRuneTypeEvent()
+	//Light Blue
+	private ItemStack GetRuneTypeParameter()
 	{
 		ItemStack runedrop = GetRuneNull();
 		List<String> runelore = new ArrayList();
@@ -295,16 +298,6 @@ public class Rune
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
-		else if (Symbol.equals("[i]"))
-		{
-			runedrop = new ItemStack(351, 1, (short)12);
-			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fItem Rune");
-			runelore.add("§3[§bi§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
-			runemeta.setLore(runelore);
-			runedrop.setItemMeta(runemeta);
-		}
 		else if (Symbol.equals("[m]"))
 		{
 			runedrop = new ItemStack(351, 1, (short)12);
@@ -315,61 +308,112 @@ public class Rune
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
-		else if (Symbol.equals("[E]"))
-		{
-			runedrop = new ItemStack(351, 1, (short)12);
-			ItemMeta runemeta = runedrop.getItemMeta();
-			runemeta.setDisplayName("§fEventful Rune");
-			runelore.add("§3[§bE§3]");
-			runelore.add("§8Event Type Rune (Single Glyph)");
-			runemeta.setLore(runelore);
-			runedrop.setItemMeta(runemeta);
-		}
 		
 		return runedrop;
 	}
 	
-	private ItemStack GetRuneTypeConstant()
+	//Orange
+	private ItemStack GetRuneTypeEvent()
 	{
 		ItemStack runedrop = GetRuneNull();
 		List<String> runelore = new ArrayList();
 		
 		if (Symbol.equals("[en]"))
 		{
-			runedrop = new ItemStack(351, 1, (short)12);
+			runedrop = new ItemStack(351, 1, (short)14);
 			ItemMeta runemeta = runedrop.getItemMeta();
 			runemeta.setDisplayName("§fEvent Left-Click Null Rune");
-			runelore.add("§8[§7en§8]");
-			runelore.add("§8Constant Type Rune (Double Glyph)");
+			runelore.add("§6[§een§6]");
+			runelore.add("§8Event Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
 		else if (Symbol.equals("[eN]"))
 		{
-			runedrop = new ItemStack(351, 1, (short)12);
+			runedrop = new ItemStack(351, 1, (short)14);
 			ItemMeta runemeta = runedrop.getItemMeta();
 			runemeta.setDisplayName("§fEvent Right-Click Null Rune");
-			runelore.add("§8[§7eN§8]");
-			runelore.add("§8Constant Type Rune (Double Glyph)");
+			runelore.add("§6[§eeN§6]");
+			runelore.add("§8Event Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
 		else if (Symbol.equals("[ep]"))
 		{
-			runedrop = new ItemStack(351, 1, (short)12);
+			runedrop = new ItemStack(351, 1, (short)14);
 			ItemMeta runemeta = runedrop.getItemMeta();
 			runemeta.setDisplayName("§fEvent Left-Click Player Rune");
-			runelore.add("§8[§7ep§8]");
-			runelore.add("§8Constant Type Rune (Double Glyph)");
+			runelore.add("§6[§eep§6]");
+			runelore.add("§8Event Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
 		}
 		else if (Symbol.equals("[eP]"))
 		{
-			runedrop = new ItemStack(351, 1, (short)12);
+			runedrop = new ItemStack(351, 1, (short)14);
 			ItemMeta runemeta = runedrop.getItemMeta();
 			runemeta.setDisplayName("§fEvent Right-Click Player Rune");
-			runelore.add("§8[§7eP§8]");
+			runelore.add("§6[§eeP§6]");
+			runelore.add("§8Event Type Rune (Double Glyph)");
+			runemeta.setLore(runelore);
+			runedrop.setItemMeta(runemeta);
+		}
+		else if (Symbol.equals("[eb]"))
+		{
+			runedrop = new ItemStack(351, 1, (short)14);
+			ItemMeta runemeta = runedrop.getItemMeta();
+			runemeta.setDisplayName("§fEvent Left-Click Block Rune");
+			runelore.add("§6[§eeb§6]");
+			runelore.add("§8Event Type Rune (Double Glyph)");
+			runemeta.setLore(runelore);
+			runedrop.setItemMeta(runemeta);
+		}
+		else if (Symbol.equals("[eB]"))
+		{
+			runedrop = new ItemStack(351, 1, (short)14);
+			ItemMeta runemeta = runedrop.getItemMeta();
+			runemeta.setDisplayName("§fEvent Right-Click Block Rune");
+			runelore.add("§6[§eeB§6]");
+			runelore.add("§8Event Type Rune (Double Glyph)");
+			runemeta.setLore(runelore);
+			runedrop.setItemMeta(runemeta);
+		}
+		else if (Symbol.equals("[em]"))
+		{
+			runedrop = new ItemStack(351, 1, (short)14);
+			ItemMeta runemeta = runedrop.getItemMeta();
+			runemeta.setDisplayName("§fEvent Left-Click Mob Rune");
+			runelore.add("§6[§eem§6]");
+			runelore.add("§8Event Type Rune (Double Glyph)");
+			runemeta.setLore(runelore);
+			runedrop.setItemMeta(runemeta);
+		}
+		else if (Symbol.equals("[eM]"))
+		{
+			runedrop = new ItemStack(351, 1, (short)14);
+			ItemMeta runemeta = runedrop.getItemMeta();
+			runemeta.setDisplayName("§fEvent Right-Click Mob Rune");
+			runelore.add("§6[§eeM§6]");
+			runelore.add("§8Event Type Rune (Double Glyph)");
+			runemeta.setLore(runelore);
+			runedrop.setItemMeta(runemeta);
+		}
+		
+		return runedrop;
+	}
+	
+	//Dark Gray
+	private ItemStack GetRuneTypeConstant()
+	{
+		ItemStack runedrop = GetRuneNull();
+		List<String> runelore = new ArrayList();
+		
+		if (Symbol.equals("[DS]"))
+		{
+			runedrop = new ItemStack(351, 1, (short)8);
+			ItemMeta runemeta = runedrop.getItemMeta();
+			runemeta.setDisplayName("§fRune of the Diamond Sword");
+			runelore.add("§8[§7en§8]");
 			runelore.add("§8Constant Type Rune (Double Glyph)");
 			runemeta.setLore(runelore);
 			runedrop.setItemMeta(runemeta);
@@ -379,6 +423,7 @@ public class Rune
 	}
 	
 	
+	//Black
 	private ItemStack GetRuneNull()
 	{
 		ItemStack runedrop = new ItemStack(263, 1, (short)1);
