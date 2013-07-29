@@ -3,6 +3,9 @@ Runecraft
 
 An advanced enchanting plugin for Bukkit, featuring event-based scripting in the physical form of Runes applied in sequence to Minecraft items and blocks!
 
+# Bukkit
+This program utilizes [CraftBukkit](http://dl.bukkit.org/), which is avilable under the LGPL. A copy of CraftBukkit can be found in the src folder and is configured to automatically load as a library in NetBeans.
+
 # License
 Copyright 2013 Diamond Sword Development
 
